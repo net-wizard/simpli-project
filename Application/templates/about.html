@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>My Website a Personal Portfolio</title>
+    <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <!-- //web fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style-starter.css')}}">
+  </head>
+  <body>
+
+<section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+    <div class="container">
+      <a class="navbar-brand" href="{{url_for('home')}}"> {{title}}</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('home')}}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('about')}}">About</a>
+          </li>
+          
+         
+        
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</section>
+<section class="w3l-about-breadcrum">
+  <div class="breadcrum-bg">
+    <div class="container py-5">
+      <p><a href="{{url_for('home')}}">Home</a> &nbsp; / &nbsp; About</p>
+     </div>
+  </div>
+</section>
+<!-- w3l-content-photo-5 -->
+<div class="w3l-content-photo-5 py-5" id="about">
+	<div class="content-main pt-lg-5 pt-md-3 pb-0">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 content-photo">
+					<a href="#"><img src="{{url_for('static', filename='/images/22.jpg')}}" class="img-fluid" alt="content-photo"></a>
+				</div>
+				<div class="col-lg-7 content-left mt-lg-0 mt-5 pl-lg-5">
+					<h3>Hello again!</h3>
+					<p class="mb-0">
+            Everything you need to know about me is in the home page of this website so i will try to be short about myself here.
+            My name is Shubham Thorat i'm a computer science pass out also i like to say i am a programmer. currently living in Maharashtra, india.
+            i am in the search of career opportunities that will help me grow professionally.
+
+          </p>
+          <p class="mb-0">
+            I have always been into anything involving coding eversince i was in high scool and signed up on facebook for the first time and got curious about how things work in computer.
+             so i took up computer science and engineering. started coding in one after another languages 
+             like HTML,c,c++, core java and advanced java,php,c#,shell script etc.
+             I got interested in different technologies that were introduced to me as a student.
+          </p>
+
+          <p class="mb-0">
+            When I'm not coding or learning, I spend my time reading, 
+            playing cricket, hiking or 
+            random road trips. I also love  
+            the watching movies and netflix series, listen to music, singing, 
+            and l'in trying to be a badass guitar player.
+          </p>
+					<a href="#" class="btn-theme2 btn mt-lg-5 mt-4">About Me</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //w3l-content-photo-5 -->
+<!-- home page service grids -->
+<!--
+<section id="services-1" class="bg-light py-5">
+  <div class="container py-lg-3">
+    <div class="heading text-center mx-auto">
+      <h3 class="head">Welcome To My Site</h3>
+      <p class="my-3 head"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Nulla mollis dapibus nunc, ut rhoncus
+        turpis sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc</p>
+        
+      </div>
+    <div class="row mt-lg-5">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-briefcase"></span>
+          </div>
+          <h4><a href="#">Want An Expert</a></h4>
+          <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
+            doloret quas saepe autem, dolor set.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-shield"></span>
+          </div>
+          <h4><a href="#">Unlimited Revisions</a></h4>
+          <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
+            doloret quas saepe autem, dolor set.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="box-wrap">
+          <div class="icon">
+            <span class="fa fa-dollar"></span>
+          </div>
+          <h4><a href="#">Let's Discuss</a></h4>
+          <p>Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
+            doloret quas saepe autem, dolor set.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //home page service grids -->
+
+
+</section>
+<section class="w3l-subscribe" id="subscribe">
+  <div class="main-host py-5 text-center">
+    <div class="container py-lg-3">
+      <div class="grids-forms">
+        
+        <div class="main-midd">
+         
+        </div>
+        <div class="main-midd-2">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ <!-- grids block 5 -->
+ <section class="w3l-footer-29-main" id="footer">
+  <div class="footer-29 text-center">
+      <div class="container">
+        
+        <div class="main-social-footer-29">
+                    
+          <a href="https://www.facebook.com/shub.thor/" target="_blank" class="facebook"><span class="fa fa-facebook"></span></a>
+          <a href="https://twitter.com/CuriousShub" target="_blank" class="twitter"><span class="fa fa-twitter"></span></a>
+          <a href="https://www.instagram.com/_shub_thorat_/" target="_blank" class="instagram"><span class="fa fa-instagram"></span></a>
+          <a href="https://www.linkedin.com/in/shubham-thorat-3900111b6/" target="_blank" class="linkedin"><span class="fa fa-linkedin"></span></a>
+          <a href="https://github.com/net-wizard" target="_blank" class="github"><span class="fa fa-github"></span></a>
+      </div>
+          <div class="bottom-copies text-center">
+            <p class="copy-footer-29">© 2021 My Website. All rights reserved | Designed by Shubham thorat</p>
+               
+          </div>
+      </div>
+  </div>
+   <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+              <span class="fa fa-angle-up"></span>
+                 </button>
+                 <script>
+                     // When the user scrolls down 20px from the top of the document, show the button
+                     window.onscroll = function () {
+                         scrollFunction()
+                     };
+              
+                     function scrollFunction() {
+                         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                             document.getElementById("movetop").style.display = "block";
+                         } else {
+                             document.getElementById("movetop").style.display = "none";
+                         }
+                     }
+              
+                     // When the user clicks on the button, scroll to the top of the document
+                     function topFunction() {
+                         document.body.scrollTop = 0;
+                         document.documentElement.scrollTop = 0;
+                     }
+                 </script>
+                 <!-- /move top -->
+</section>
+<!-- // grids block 5 -->
+<script src="{{url_for('static', filename='/js/jquery-3.3.1.min.js')}}"></script>
+<!-- //footer-28 block -->
+</section>
+
+<script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+<!-- Smooth scrolling -->
+
+
+
+</body>
+
+</html>
+<!-- // grids block 5 -->
+
