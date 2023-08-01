@@ -42,9 +42,6 @@ resource "aws_instance" "demo-instance" {
   tags = {
     Name = "demo-instance"
   }
-  provisioner "local-exec" {
-    command = "echo ${aws_instance.demo-instance.public_ip} > ./hosts"
-  }
 }
 
 output "instance-ip" {
