@@ -1,7 +1,7 @@
 resource "aws_security_group" "demo-sg" {
   name        = "demo-sg-name"
   description = "Demo security group for demo instance"
-  vpc_id      = "vpc-01b3dcc48cb0f1af4"
+ 
 
   ingress {
     description = "ssh"
