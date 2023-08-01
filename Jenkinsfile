@@ -11,20 +11,10 @@
                     }
                 }
             }
-            stage('Handle existing docker image') {
+            stage('Deploy app') {
                 steps {
                     script {
-                        sh '''docker stop $(docker ps -a -q)'''
-                        sh '''docker rm $(docker ps -aq)'''
-                        sh '''docker rmi portfolio-app'''
-                    }
-                }
-            }
-            stage('Building docker') {
-                steps {
-                    script {
-                        sh '''docker build . -t portfolio-app'''
-                        sh '''docker run -d -p 80:3000 portfolio-app'''
+                        ansiblePlaybook installation: 'Ansible', playbook: 'deploy.yml'
                     }
                 }
             }
