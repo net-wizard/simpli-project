@@ -11,13 +11,13 @@ resource "aws_instance" "demo-instance" {
   security_groups             = [aws_security_group.demo-sg.name]
   key_name                    = "demo-key"
 
-  
 
-   connection {
-    type = "ssh"
+
+  connection {
+    type        = "ssh"
     user        = "ubuntu"
     private_key = tls_private_key.demo-private.private_key_pem
-    host = "${aws_instance.demo-instance.public_ip}"
+    host        = aws_instance.demo-instance.public_ip
   }
 
   provisioner "file" {

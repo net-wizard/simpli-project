@@ -1,7 +1,7 @@
 resource "aws_security_group" "demo-sg" {
   name        = "demo-sg-name"
   description = "Demo security group for demo instance"
- 
+
 
   ingress {
     description = "ssh"
