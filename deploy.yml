@@ -4,7 +4,7 @@
     - name: Pull-app
       docker_container:
         name: my-app
-        image: thoratshubham/portfolio
+        image: thoratshubham/portfolio:latest
         state: started
         detach: yes
         ports:
